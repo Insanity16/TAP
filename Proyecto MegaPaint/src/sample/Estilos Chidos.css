@@ -1,0 +1,39 @@
+.buttonChido{
+
+  -fx-background-repeat: no-repeat;
+
+ }
+.buttonguardar{
+  -fx-background-image: url("./img/guardar2.jpg");
+  -fx-background-size: contain;
+  -fx-background-size: 100% 100%;
+ }
+ .buttonpincelr{
+   -fx-background-image: url("./img/pincel.png");
+   -fx-background-size: contain;
+   -fx-background-size: 100% 100%;
+
+}
+.buttonborrador{
+    -fx-background-image: url("./img/borrador.png");
+    -fx-background-size: contain;
+    -fx-background-size: 100% 100%;
+}
+   .buttoncirculo{
+     -fx-background-image: url("./img/circulo.png");
+     -fx-background-size: contain;
+     -fx-background-size: 100% 100%;
+}
+.buttoncuadro{
+      -fx-background-image: url("./img/cuadro.png");
+      -fx-background-size: contain;
+      -fx-background-size: 100% 100%;
+}
+.buttonmenos{
+       -fx-background-image: url("./img/menos.png");
+       -fx-background-size: contain;
+       -fx-background-size: 100% 100%;
+}
+ .cabecera{
+ -fx-background-color: #8A868F;
+ }
