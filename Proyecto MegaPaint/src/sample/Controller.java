@@ -169,11 +169,11 @@ public class Controller {
             context.strokeOval(0,0,Lienzo.getWidth(),Lienzo.getWidth() );
             for (int j = 1; j < valor + 1; j++) {
 
-                /*context.strokeOval(g+(Math.sin(diviosiones+divAncho)*j),g-(Math.cos(diviosiones+divAncho)*j),divAncho,divAncho);
+                context.strokeOval(g+(divAalto-(diviosiones * j))*(divAncho + (diviosiones * j)),g+(divAalto-(diviosiones * j))*(divAncho + (diviosiones * j)),divAncho,divAncho);
                 context.strokeOval(299+j*(Math.sin(diviosiones)),51+j*(Math.sin(diviosiones)),divAncho,divAncho);
                 context.strokeOval(51,299,divAncho,divAncho);
                 context.strokeOval(299,299,divAncho,divAncho);
-*/
+
 // no se pudo :C
 
 
