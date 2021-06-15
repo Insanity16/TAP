@@ -22,6 +22,7 @@ public class informacion {
     @FXML
     StackPane stackpane;
     public void btinicio(ActionEvent event) throws IOException {
+
         Parent root= FXMLLoader.load(getClass().getResource("../Sintomas/sintomas.fxml"));
         Scene scene=anchorpane.getScene();
         root.translateXProperty().set(600);

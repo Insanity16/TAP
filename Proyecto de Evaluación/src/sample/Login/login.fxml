@@ -4,6 +4,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -80,6 +81,24 @@
                         <String fx:value="Redondo" />
                      </styleClass>
                   </Button>
+                  <Label text="Login">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtusuario" maxWidth="100.0" minWidth="100.0" promptText="Usuario">
+                     <VBox.margin>
+                        <Insets left="45.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="txtpassword" maxWidth="100.0" minWidth="70.0" prefWidth="70.0" promptText="Password">
+                     <VBox.margin>
+                        <Insets left="45.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
                </children>
                <BorderPane.margin>
                   <Insets top="20.0" />
@@ -89,27 +108,18 @@
          <bottom>
             <VBox prefHeight="133.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label prefHeight="47.0" prefWidth="100.0" text="Integrantes">
+                  <Button mnemonicParsing="false" onAction="#Base" stylesheets="@../Estilos/estilos.css" text="Base de datos">
+                     <styleClass>
+                        <String fx:value="degradado_botones" />
+                        <String fx:value="Redondo" />
+                     </styleClass>
                      <VBox.margin>
-                        <Insets left="235.0" top="5.0" />
+                        <Insets left="40.0" top="10.0" />
                      </VBox.margin>
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <Label text="Aaron valdez ">
-                     <VBox.margin>
-                        <Insets left="250.0" top="5.0" />
-                     </VBox.margin>
-                  </Label>
-                  <Label text="Axel Torres">
-                     <VBox.margin>
-                        <Insets left="250.0" top="5.0" />
-                     </VBox.margin>
-                  </Label>
+                  </Button>
                   <Label text="Saul Rodriguez">
                      <VBox.margin>
-                        <Insets left="250.0" top="5.0" />
+                        <Insets left="250.0" top="40.0" />
                      </VBox.margin>
                   </Label>
                </children>

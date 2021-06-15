@@ -1,0 +1,17 @@
+.degradado_botones_simulacion{
+   -fx-background-color: linear-gradient(from 1% 80% to 100% 100%,#9BA5B9,#F2EAD6);
+}
+.Fondo_Listen{
+   -fx-background-color: linear-gradient(from 70% 50% to 100% 100%, #CEFDED
+, #96ABBE);
+}
+.button:hover {
+    -fx-font-size: 12.2px;
+}
+.Redondo{
+  -fx-background-radius: 18 18 18 18;
+  -fx-border-radius: 0 0 18 18;
+}
+.degradado_botones{
+    -fx-background-color: linear-gradient(from 1% 99% to 100% 100%,#96ABBE,#CEFDED);
+ }

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="45.0" layoutY="36.0" prefHeight="30.0" prefWidth="82.0" text="6+2x-x^3dx" />
+      <Label layoutX="45.0" layoutY="66.0" text="A=-1" />
+      <Label layoutX="48.0" layoutY="90.0" text="B=2" />
+      <Label layoutX="161.0" layoutY="43.0" text="N=" />
+      <Label layoutX="289.0" layoutY="43.0" text="b-a/n=" />
+      <Label fx:id="laberh" layoutX="344.0" layoutY="43.0" />
+      <Button layoutX="167.0" layoutY="86.0" mnemonicParsing="false" onAction="#CalcularH" text="Calcular H" />
+      <TextField fx:id="N1" layoutX="179.0" layoutY="39.0" prefHeight="25.0" prefWidth="28.0" />
+      <Button layoutX="354.0" layoutY="145.0" mnemonicParsing="false" onAction="#Calculartodo" text="Calcular" />
+      <Label layoutX="53.0" layoutY="179.0" text="N">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="179.0" text="a+h">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="179.0" text="F(a+h)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="179.0" text="Coeficiente">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="179.0" text="F(a+b)+Cof">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Tf0" layoutX="30.0" layoutY="200.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="Tf1" layoutX="30.0" layoutY="225.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="Tf2" layoutX="30.0" layoutY="250.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="Tf3" layoutX="30.0" layoutY="275.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="Tf4" layoutX="30.0" layoutY="300.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="Tf5" layoutX="30.0" layoutY="325.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="Tf6" layoutX="30.0" layoutY="350.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH0" layoutX="94.0" layoutY="200.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH1" layoutX="94.0" layoutY="225.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH2" layoutX="94.0" layoutY="250.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH3" layoutX="94.0" layoutY="275.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH4" layoutX="94.0" layoutY="300.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH5" layoutX="94.0" layoutY="325.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH6" layoutX="94.0" layoutY="350.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH0F" layoutX="173.0" layoutY="200.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH1F" layoutX="173.0" layoutY="225.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH2F" layoutX="173.0" layoutY="250.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH3F" layoutX="173.0" layoutY="275.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH4F" layoutX="173.0" layoutY="300.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH5F" layoutX="173.0" layoutY="325.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="AH6F" layoutX="173.0" layoutY="350.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coe0" layoutX="259.0" layoutY="200.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coe1" layoutX="259.0" layoutY="225.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coe2" layoutX="259.0" layoutY="250.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coe3" layoutX="259.0" layoutY="275.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coe4" layoutX="259.0" layoutY="300.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coe5" layoutX="259.0" layoutY="325.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coe6" layoutX="259.0" layoutY="350.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coef0" layoutX="354.0" layoutY="200.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coef1" layoutX="354.0" layoutY="225.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coef2" layoutX="354.0" layoutY="250.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coef3" layoutX="354.0" layoutY="275.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coef4" layoutX="354.0" layoutY="300.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coef5" layoutX="354.0" layoutY="325.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <TextField fx:id="coef6" layoutX="354.0" layoutY="350.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <Label layoutX="40.0" layoutY="410.0" text="H/3=" />
+      <Label fx:id="LabH" layoutX="80.0" layoutY="410.0" />
+      <TextField fx:id="coef7" layoutX="354.0" layoutY="375.0" prefHeight="7.0" prefWidth="58.0" visible="false" />
+      <Label fx:id="LblTotal" layoutX="369.0" layoutY="410.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="421.0" layoutY="145.0" mnemonicParsing="false" onAction="#Limpiar" text="Limpiar" />
+   </children>
+</AnchorPane>

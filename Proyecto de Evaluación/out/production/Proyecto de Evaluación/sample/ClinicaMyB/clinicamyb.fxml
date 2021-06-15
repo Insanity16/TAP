@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ClinicaMyB.clinicamyb">
+    <children>
+        <BorderPane layoutX="-7.0" prefHeight="600.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <HBox prefHeight="90.0" prefWidth="585.0" styleClass="Fondo_Listen" stylesheets="@../Estilos/estilos.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label text="Modificar y Borrar">
+                            <HBox.margin>
+                                <Insets left="20.0" top="20.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="32.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </top>
+            <center>
+                <HBox maxHeight="250.0" minHeight="-Infinity" styleClass="Fondo_Listen" stylesheets="@../Estilos/estilos.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <TextField fx:id="eliminarnombre" prefWidth="100.0" promptText="Nombre_Clinica">
+                            <HBox.margin>
+                                <Insets left="35.0" right="5.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="eliminarcapacidad" prefWidth="100.0" promptText="Capacidad">
+                            <HBox.margin>
+                                <Insets left="5.0" right="5.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="eliminarcalle" prefWidth="100.0" promptText="Calle">
+                            <HBox.margin>
+                                <Insets left="5.0" right="5.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="eliminarnumero" prefWidth="100.0" promptText="Numero_#" stylesheets="@../Estilos/estilos.css">
+                            <HBox.margin>
+                                <Insets left="5.0" right="5.0" top="10.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#eliminar" prefWidth="80.0" text="Eliminar ">
+                            <HBox.margin>
+                                <Insets left="5.0" right="5.0" top="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <TextField fx:id="txnombreM" prefWidth="100.0" promptText="Nombre_Clinica">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets left="-525.0" top="50.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#modname" text="Modificar">
+                            <HBox.margin>
+                                <Insets left="10.0" top="50.0" />
+                            </HBox.margin>
+                        </Button>
+                        <TextField fx:id="txnombreR" prefWidth="100.0" promptText="Nombre_Clinica">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets left="10.0" right="5.0" top="50.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="txcapacidadM" prefWidth="100.0" promptText="Capacidad">
+                            <HBox.margin>
+                                <Insets left="-290.0" top="100.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#modcap" text="Modificar">
+                            <HBox.margin>
+                                <Insets left="10.0" top="100.0" />
+                            </HBox.margin>
+                        </Button>
+                        <TextField fx:id="txcapacidadR" prefWidth="100.0" promptText="Capacidad">
+                            <HBox.margin>
+                                <Insets left="10.0" right="15.0" top="100.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="txcalleM" prefWidth="100.0" promptText="Calle">
+                            <HBox.margin>
+                                <Insets left="-300.0" top="150.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#modcalle" text="Modificar">
+                            <HBox.margin>
+                                <Insets left="10.0" right="10.0" top="150.0" />
+                            </HBox.margin>
+                        </Button>
+                        <TextField fx:id="txcalleR" prefWidth="100.0" promptText="Calle">
+                            <HBox.margin>
+                                <Insets right="10.0" top="150.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="txnumeroM" prefWidth="100.0" promptText="Numero_#" stylesheets="@../Estilos/estilos.css">
+                            <HBox.margin>
+                                <Insets left="-300.0" right="5.0" top="200.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#modnumero" text="Modificar">
+                            <HBox.margin>
+                                <Insets left="5.0" top="200.0" />
+                            </HBox.margin>
+                        </Button>
+                        <TextField fx:id="txnumeroR" prefWidth="100.0" promptText="Numero_#" stylesheets="@../Estilos/estilos.css">
+                            <HBox.margin>
+                                <Insets left="10.0" top="200.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+            </center>
+            <bottom>
+                <VBox prefHeight="260.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <TableView fx:id="tabla" minHeight="200.0" prefHeight="200.0" />
+                        <Button mnemonicParsing="false" onAction="#atras" text="Atras">
+                            <VBox.margin>
+                                <Insets left="20.0" top="10.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </bottom>
+            <padding>
+                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+            </padding>
+        </BorderPane>
+    </children>
+</AnchorPane>

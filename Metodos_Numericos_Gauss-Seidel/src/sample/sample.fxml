@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" styleClass="degradado_botones_simulacion" stylesheets="@Estilos_Bonitos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="63.0" layoutY="154.0" mnemonicParsing="false" onAction="#acomodar" prefHeight="25.0" prefWidth="110.0" text="Acomodar">
+         <styleClass>
+            <String fx:value="degradado_botones" />
+            <String fx:value="Redondo" />
+         </styleClass></Button>
+      <TextField fx:id="txt1" alignment="CENTER" layoutX="63.0" layoutY="48.0" prefHeight="25.0" prefWidth="47.0" text="-1" />
+      <TextField fx:id="txt2" alignment="CENTER" layoutX="125.0" layoutY="48.0" prefHeight="25.0" prefWidth="47.0" text="2" />
+      <TextField fx:id="txt3" alignment="CENTER" layoutX="189.0" layoutY="48.0" prefHeight="25.0" prefWidth="47.0" text="10" />
+      <TextField fx:id="txt4" alignment="CENTER" layoutX="63.0" layoutY="80.0" prefHeight="25.0" prefWidth="47.0" text="11" />
+      <TextField fx:id="txt5" alignment="CENTER" layoutX="125.0" layoutY="80.0" prefHeight="25.0" prefWidth="47.0" text="-1" />
+      <TextField fx:id="txt6" alignment="CENTER" layoutX="189.0" layoutY="80.0" prefHeight="25.0" prefWidth="47.0" text="2" />
+      <TextField fx:id="txt7" alignment="CENTER" layoutX="63.0" layoutY="111.0" prefHeight="25.0" prefWidth="47.0" text="1" />
+      <TextField fx:id="txt8" alignment="CENTER" layoutX="125.0" layoutY="111.0" prefHeight="25.0" prefWidth="47.0" text="5" />
+      <TextField fx:id="txt9" alignment="CENTER" layoutX="189.0" layoutY="111.0" prefHeight="25.0" prefWidth="47.0" text="2" />
+      <TextField fx:id="txt1A" alignment="CENTER" layoutX="253.0" layoutY="48.0" prefHeight="25.0" prefWidth="47.0" text="11" />
+      <TextField fx:id="txt3A" alignment="CENTER" layoutX="253.0" layoutY="111.0" prefHeight="25.0" prefWidth="47.0" text="8" />
+      <TextField fx:id="txt2A" alignment="CENTER" layoutX="253.0" layoutY="80.0" prefHeight="25.0" prefWidth="47.0" text="12" />
+      <Label layoutX="114.0" layoutY="52.0" text="X" />
+      <Label layoutX="114.0" layoutY="84.0" text="X" />
+      <Label layoutX="114.0" layoutY="115.0" prefWidth="0.0" text="X" />
+      <Label layoutX="178.0" layoutY="52.0" text="Y" />
+      <Label layoutX="178.0" layoutY="84.0" text="Y" />
+      <Label layoutX="178.0" layoutY="115.0" text="Y" />
+      <Label layoutX="240.0" layoutY="115.0" prefWidth="0.0" text="Z" />
+      <Label layoutX="240.0" layoutY="84.0" prefWidth="0.0" text="Z" />
+      <Label layoutX="240.0" layoutY="52.0" prefWidth="0.0" text="Z" />
+      <Label layoutX="220.0" layoutY="14.0" text="Metodo Gauss_seidel">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="315.0" text="Ite">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="315.0" text="X">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="315.0" text="Y">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="267.0" layoutY="315.0" prefWidth="0.0" text="Z">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="315.0" prefHeight="17.0" prefWidth="47.0" text="DI(tol)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField alignment="CENTER" layoutX="59.0" layoutY="340.0" prefHeight="25.0" prefWidth="55.0" text="0" />
+      <TextField fx:id="X0" alignment="CENTER" layoutX="125.0" layoutY="340.0" prefHeight="25.0" prefWidth="55.0" text="0" />
+      <TextField fx:id="Y0" alignment="CENTER" layoutX="189.0" layoutY="340.0" prefHeight="25.0" prefWidth="55.0" text="0" />
+      <TextField fx:id="Z0" alignment="CENTER" layoutX="249.0" layoutY="340.0" prefHeight="25.0" prefWidth="55.0" text="0" />
+      <TextField alignment="CENTER" layoutX="317.0" layoutY="340.0" prefHeight="25.0" prefWidth="83.0" text="0" />
+      <TextField alignment="CENTER" layoutX="59.0" layoutY="365.0" prefHeight="25.0" prefWidth="55.0" text="1" />
+      <TextField alignment="CENTER" layoutX="59.0" layoutY="390.0" prefHeight="25.0" prefWidth="55.0" text="2" />
+      <TextField alignment="CENTER" layoutX="59.0" layoutY="415.0" prefHeight="25.0" prefWidth="55.0" text="3" />
+      <TextField alignment="CENTER" layoutX="59.0" layoutY="440.0" prefHeight="25.0" prefWidth="55.0" text="4" />
+      <TextField fx:id="X1" layoutX="125.0" layoutY="365.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="X2" layoutX="125.0" layoutY="390.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="X3" layoutX="125.0" layoutY="415.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="X4" layoutX="125.0" layoutY="440.0" prefHeight="25.0" prefWidth="55.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="Y1" layoutX="189.0" layoutY="365.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="Y2" layoutX="189.0" layoutY="390.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="Y3" layoutX="189.0" layoutY="415.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="Y4" layoutX="189.0" layoutY="440.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="Z1" layoutX="249.0" layoutY="365.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="Z2" layoutX="249.0" layoutY="390.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="Z3" layoutX="249.0" layoutY="415.0" prefHeight="25.0" prefWidth="55.0" />
+      <TextField fx:id="Z4" layoutX="249.0" layoutY="440.0" prefHeight="25.0" prefWidth="55.0">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="Di1" layoutX="317.0" layoutY="365.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="Di2" layoutX="317.0" layoutY="390.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="Di3" layoutX="317.0" layoutY="415.0" prefHeight="25.0" prefWidth="83.0" />
+      <TextField fx:id="Di4" layoutX="317.0" layoutY="440.0" prefHeight="25.0" prefWidth="83.0" />
+      <Button layoutX="413.0" layoutY="365.0" mnemonicParsing="false" onAction="#calcular" text="Calcular">
+         <styleClass>
+            <String fx:value="degradado_botones" />
+            <String fx:value="Redondo" />
+         </styleClass>
+      </Button>
+      <Label layoutX="329.0" layoutY="142.0" text="X=Y=Z=0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="167.0" text="Tol&lt;0.01">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="327.0" layoutY="47.0" text="X=(y-2z+12)/11">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="324.0" layoutY="79.0" text="Y=(8-x-2z)/5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="110.0" text="Z=(11+x-2y)/10">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="569.0" text="Hecho por: Saul Eduardo Rodriguez Prieto">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

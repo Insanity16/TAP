@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="LblDinero" layoutX="186.0" layoutY="155.0" prefHeight="53.0" prefWidth="129.0" text="\$0.00" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="LblP" layoutX="113.0" layoutY="208.0" prefHeight="35.0" prefWidth="275.0" text="0% de Gasolina cargada" textAlignment="CENTER">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="284.0" prefHeight="41.0" prefWidth="151.0" text="Litros de gasolina:" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="315.0" layoutY="287.0" mnemonicParsing="false" onAction="#Start" prefHeight="35.0" prefWidth="41.0" style="-fx-background-color: #000000;" text="Start" textFill="WHITE" />
+      <ProgressBar fx:id="Proges" layoutX="105.0" layoutY="243.0" prefHeight="35.0" prefWidth="250.0" progress="0.0" style="-fx-background-color: #000000;" />
+      <TextField fx:id="tot" layoutX="242.0" layoutY="287.0" prefHeight="35.0" prefWidth="68.0" />
+   </children>
+</AnchorPane>

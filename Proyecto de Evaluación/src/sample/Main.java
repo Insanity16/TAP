@@ -11,7 +11,7 @@ public static  Stage stage;
     @Override
     public void start(Stage primaryStage) throws Exception{
         stage=primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("Login/login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("ClinicaMyB/clinicamyb.fxml"));
         primaryStage.setTitle("El covid-19");
         primaryStage.setScene(new Scene(root, 600, 600));
         primaryStage.show();
