@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="Fondo_newton" stylesheets="@../Estilos/estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Newton.newton">
+   <children>
+      <Label layoutX="216.0" layoutY="26.0" text="Newton">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="23.0" layoutY="546.0" mnemonicParsing="false" onAction="#atras" text="Atras" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="Redondo" />
+            <String fx:value="degradado_botones_asd" />
+         </styleClass>
+      </Button>
+      <Label layoutX="56.0" layoutY="104.0" text="X">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="104.0" text="Y">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="X0" layoutX="47.0" layoutY="131.0" prefHeight="27.0" prefWidth="30.0" />
+      <TextField fx:id="Y0" layoutX="88.0" layoutY="131.0" prefHeight="27.0" prefWidth="36.0" />
+      <TextField fx:id="X1" layoutX="47.0" layoutY="169.0" prefHeight="27.0" prefWidth="30.0" />
+      <TextField fx:id="Y1" layoutX="88.0" layoutY="169.0" prefHeight="27.0" prefWidth="36.0" />
+      <TextField fx:id="X2" layoutX="48.0" layoutY="204.0" prefHeight="27.0" prefWidth="30.0" />
+      <TextField fx:id="Y2" layoutX="88.0" layoutY="204.0" prefHeight="27.0" prefWidth="36.0" />
+      <TextField fx:id="X3" layoutX="47.0" layoutY="241.0" prefHeight="27.0" prefWidth="30.0" visible="false" />
+      <TextField fx:id="Y3" layoutX="88.0" layoutY="241.0" prefHeight="27.0" prefWidth="36.0" visible="false" />
+      <Label layoutX="53.0" layoutY="288.0" text="B0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labb0" layoutX="85.0" layoutY="292.0" prefHeight="25.0" prefWidth="0.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="313.0" text="B1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labb1" layoutX="87.0" layoutY="317.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="338.0" text="B2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labb2" layoutX="86.0" layoutY="342.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblb3" layoutX="54.0" layoutY="363.0" text="B3" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="labb3" layoutX="86.0" layoutY="367.0" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="50.0" layoutY="392.0" mnemonicParsing="false" onAction="#calcular" prefHeight="25.0" prefWidth="75.0" text="Calcular" textFill="WHITE">
+         <styleClass>
+            <String fx:value="Redondo" />
+            <String fx:value="degradado_botones_asd" />
+         </styleClass></Button>
+      <Button layoutX="135.0" layoutY="203.0" mnemonicParsing="false" onAction="#botonmas" prefHeight="25.0" prefWidth="18.0" text="+" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <styleClass>
+            <String fx:value="Redondo" />
+            <String fx:value="degradado_botones_asd" />
+         </styleClass>
+      </Button>
+      <Label layoutX="200.0" layoutY="180.0" text="Ecuacion=">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="ecua" layoutX="200.0" layoutY="210.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="ecua1" layoutX="200.0" layoutY="240.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="ecua2" layoutX="200.0" layoutY="270.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="ecua3" layoutX="200.0" layoutY="290.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="169.0" layoutY="549.0" mnemonicParsing="false" onAction="#verificar" prefHeight="25.0" prefWidth="75.0" text="Verificar" textFill="WHITE">
+         <styleClass>
+            <String fx:value="Redondo" />
+            <String fx:value="degradado_botones_asd" />
+         </styleClass></Button>
+      <Canvas fx:id="Lienzo" height="200.0" layoutX="167.0" layoutY="340.0" styleClass="Fondo_Principal" width="350.0" />
+      <Label layoutX="150.0" layoutY="520.0" text="2" />
+      <Label layoutX="150.0" layoutY="500.0" text="4" />
+      <Label layoutX="150.0" layoutY="480.0" text="6" />
+      <Label layoutX="150.0" layoutY="460.0" text="8" />
+      <Label layoutX="150.0" layoutY="440.0" text="10" />
+      <Label layoutX="150.0" layoutY="420.0" text="12" />
+      <Label layoutX="150.0" layoutY="400.0" text="14" />
+      <Label layoutX="150.0" layoutY="380.0" text="16" />
+      <Label layoutX="150.0" layoutY="360.0" text="18" />
+      <Label layoutX="150.0" layoutY="340.0" text="20" />
+      <Label layoutX="294.0" layoutY="553.0" text="X^3+" />
+      <TextField fx:id="XD3" layoutX="259.0" layoutY="549.0" prefHeight="17.0" prefWidth="30.0" text="0" />
+      <Label layoutX="362.0" layoutY="553.0" text="X^2+" />
+      <TextField fx:id="XD2" layoutX="327.0" layoutY="549.0" prefHeight="17.0" prefWidth="30.0" text="0" />
+      <Label layoutX="430.0" layoutY="553.0" text="X+" />
+      <TextField fx:id="XD1" layoutX="395.0" layoutY="549.0" prefHeight="17.0" prefWidth="30.0" text="0" />
+      <Label layoutX="476.0" layoutY="553.0" />
+      <TextField fx:id="XD" layoutX="452.0" layoutY="549.0" prefHeight="17.0" prefWidth="30.0" text="0" />
+   </children>
+</AnchorPane>

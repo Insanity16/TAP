@@ -1,0 +1,38 @@
+.Fondo_Principal{
+   -fx-background-color: linear-gradient(from 70% 50% to 100% 100%, #CEFDED
+, #A19411);
+}
+.Fondo_newton{
+   -fx-background-color: linear-gradient(from 70% 50% to 100% 100%, #CED73E
+, #26871C);
+}
+.blaco{
+   -fx-background-color: linear-gradient(from 70% 50% to 100% 100%, #FFFFFF
+, #FFFFFF);
+}
+.degradado_botones{
+   -fx-background-color: linear-gradient(from 1% 99% to 100% 100%,#114170,#935CE7);
+}
+.degradado_botones_asd{
+   -fx-background-color: linear-gradient(from 1% 99% to 100% 100%,#706D00,#703000);
+}
+.degradado_botones_simulacion{
+   -fx-background-color: linear-gradient(from 1% 80% to 100% 100%,#9BA5B9,#F2EAD6);
+}
+.Fondo_simulacion{
+   -fx-background-color: linear-gradient(from 50% 50% to 100% 100%,#F2EAD6,#625B8A);
+}
+.ImageCovid{
+  -fx-background-image: url("../Img/Covid.jpg");
+  -fx-background-size: contain;
+  -fx-background-size: 100% 100%;
+ }
+.Redondo{
+  -fx-background-radius: 18 18 18 18;
+  -fx-border-radius: 0 0 18 18;
+}
+.button:hover {
+    -fx-font-size: 12.2px;
+}
+
+

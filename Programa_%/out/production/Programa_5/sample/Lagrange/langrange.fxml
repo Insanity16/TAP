@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Lagrange.langrange">
+   <children>
+      <Label layoutX="216.0" layoutY="27.0" text="Lagrange">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Button layoutX="32.0" layoutY="540.0" mnemonicParsing="false" onAction="#atras" text="Atras">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
