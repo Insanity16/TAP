@@ -2,6 +2,18 @@
    -fx-background-color: linear-gradient(from 70% 50% to 100% 100%, #CEFDED
 , #A19411);
 }
+.Fondo_Principal2{
+   -fx-background-color: linear-gradient(from 100% 1% to 100% 50%, #1ADEB8
+, #1A85DE);
+}
+.colorcolor{
+   -fx-background-color: linear-gradient(from 100% 1% to 100% 50%, #B7FEF9
+, #BEE5F9);
+}
+.colorlangre{
+   -fx-background-color: linear-gradient(from 100% 1% to 100% 50%, #E1A0FF
+, #FF0087);
+}
 .Fondo_newton{
    -fx-background-color: linear-gradient(from 70% 50% to 100% 100%, #CED73E
 , #26871C);
@@ -10,8 +22,15 @@
    -fx-background-color: linear-gradient(from 70% 50% to 100% 100%, #FFFFFF
 , #FFFFFF);
 }
+.gris{
+   -fx-background-color: linear-gradient(from 70% 50% to 100% 100%, #EEF1FC
+, #EEF1FC);
+}
 .degradado_botones{
    -fx-background-color: linear-gradient(from 1% 99% to 100% 100%,#114170,#935CE7);
+}
+.degradado_botones_sssss{
+   -fx-background-color: linear-gradient(from 1% 99% to 100% 100%,#FF8484,#FF84D6);
 }
 .degradado_botones_asd{
    -fx-background-color: linear-gradient(from 1% 99% to 100% 100%,#706D00,#703000);
@@ -32,7 +51,7 @@
   -fx-border-radius: 0 0 18 18;
 }
 .button:hover {
-    -fx-font-size: 12.2px;
+    -fx-font-size: 18px;
 }
 
 

@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Principal.principal">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" styleClass="Fondo_Principal2" stylesheets="@../Estilos/estilos.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Principal.principal">
     <children>
-        <Label layoutX="182.0" layoutY="48.0" text="Programa 5">
+        <Label layoutX="172.0" layoutY="48.0" text="Programa 5" textAlignment="CENTER">
             <font>
-                <Font size="46.0" />
+                <Font name="System Bold Italic" size="46.0" />
             </font>
         </Label>
-        <Label layoutX="174.0" layoutY="150.0" text="Favor de Escojer un metodo ">
+        <Label layoutX="163.0" layoutY="154.0" text="Favor de Escojer un metodo ">
             <font>
-                <Font size="20.0" />
+                <Font name="System Bold Italic" size="21.0" />
             </font>
         </Label>
-        <Button layoutX="62.0" layoutY="281.0" mnemonicParsing="false" onAction="#Newton" text="Newton">
+        <Button layoutX="121.0" layoutY="281.0" mnemonicParsing="false" onAction="#Newton" text="Newton">
             <font>
                 <Font size="18.0" />
             </font>
+         <styleClass>
+            <String fx:value="Redondo" />
+            <String fx:value="colorcolor" />
+         </styleClass>
         </Button>
-        <Button layoutX="446.0" layoutY="281.0" mnemonicParsing="false" onAction="#Lagrange" text="lagrange">
+        <Button layoutX="379.0" layoutY="281.0" mnemonicParsing="false" onAction="#Lagrange" text="lagrange">
             <font>
                 <Font size="18.0" />
             </font>
+         <styleClass>
+            <String fx:value="Redondo" />
+            <String fx:value="colorcolor" />
+         </styleClass>
         </Button>
-        <Button layoutX="214.0" layoutY="281.0" mnemonicParsing="false" onAction="#Minimo" text="Minimo cuadrados">
+        <Label layoutX="114.0" layoutY="543.0" text="Hecho por: Saul Eduardo Rodriguez Prieto">
             <font>
-                <Font size="18.0" />
-            </font>
-        </Button>
-        <Label layoutX="121.0" layoutY="541.0" text="Hecho por: Saul Eduardo Rodriguez Prieto">
-            <font>
-                <Font size="20.0" />
+                <Font name="System Bold Italic" size="19.0" />
             </font>
         </Label>
     </children>
