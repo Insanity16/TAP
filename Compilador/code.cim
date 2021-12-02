@@ -1,0 +1,14 @@
+#comentario asdasdasda
+PRINT "hola mundo"
+INPUT numero
+LET a = 0
+DECLARA xxxx COMO SARTEN 
+-----
+"asdasdasdasd"
+WHILE a > 0 REPEAT 
+    PRINT a
+    LET c = a + b
+    LET a = b
+    LET b = comentario
+
+END WHILE

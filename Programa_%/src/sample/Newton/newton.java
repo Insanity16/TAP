@@ -48,7 +48,6 @@ public class newton {
             Double t1;
             Double t2;
             Double t11;
-            //ESTP ES LO QUE OCUPAS TU ULISES Double.parseDouble(Y1.getText()) ASI SE SACA EL DATO Y YA HACES LO QUE QUIERAS CON EL
            t1=((Double.parseDouble(Y1.getText())-Double.parseDouble(Y0.getText()))/(Double.parseDouble(X1.getText())-Double.parseDouble(X0.getText())));
            t2=((Double.parseDouble(Y2.getText())-Double.parseDouble(Y1.getText()))/(Double.parseDouble(X2.getText())-Double.parseDouble(X1.getText())));
             t11=((t2-t1)/(Double.parseDouble(X2.getText())-Double.parseDouble(X0.getText())));
