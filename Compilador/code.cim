@@ -3,8 +3,14 @@ PRINT "hola mundo"
 INPUT numero
 LET a = 0
 DECLARA xxxx COMO SARTEN 
------
-"asdasdasdasd"
+ABC
+"asdasdadasd"
+ONE
+ZERO
+A
+B
+C
+GATO
 WHILE a > 0 REPEAT 
     PRINT a
     LET c = a + b

@@ -119,7 +119,93 @@ class Lexer:
             tokenText=self.source[starPos : self.curPos +1 ]
             keyword = Token.checkIfKeyword(tokenText)
             if keyword == None:
-                
+                #traductor 
+                if keyword == "-----":
+                    token = Token(tokenText, TokenType.ZERO)
+                elif keyword == ".----":
+                    token = Token(tokenText, TokenType.ONE)
+                elif keyword == "..---":
+                    token = Token(tokenText, TokenType.TWO)
+                elif keyword == "...--":
+                    token = Token(tokenText, TokenType.THREE)
+                elif keyword == "....-":
+                    token = Token(tokenText, TokenType.FOUR)
+                elif keyword == ".....":
+                    token = Token(tokenText, TokenType.FIVE)
+                elif keyword == "-....":
+                    token = Token(tokenText, TokenType.SIX)
+                elif keyword == "--...":
+                    token = Token(tokenText, TokenType.SEVEN)
+                elif keyword == "---..":
+                    token = Token(tokenText, TokenType.EIGHT)
+                elif keyword == "----.":
+                    token = Token(tokenText, TokenType.NINE)
+                #Letras
+                elif keyword == ".-	":
+                    token = Token(tokenText, TokenType.A)
+                elif keyword == "-...":
+                    token = Token(tokenText, TokenType.B)
+                elif keyword == "-.-.":
+                    token = Token(tokenText, TokenType.C)
+                elif keyword == "-..":
+                    token = Token(tokenText, TokenType.D)
+                elif keyword == ".":
+                    token = Token(tokenText, TokenType.E)
+                elif keyword == "..-.":
+                    token = Token(tokenText, TokenType.F)
+                elif keyword == "--.":
+                    token = Token(tokenText, TokenType.G)
+                elif keyword == "....":
+                    token = Token(tokenText, TokenType.H)
+                elif keyword == "..":
+                    token = Token(tokenText, TokenType.I)
+                elif keyword == ".---":
+                    token = Token(tokenText, TokenType.J)
+                elif keyword == "-.-":
+                    token = Token(tokenText, TokenType.K)
+                elif keyword == ".-..":
+                    token = Token(tokenText, TokenType.L)
+                elif keyword == "--":
+                    token = Token(tokenText, TokenType.M)
+                elif keyword == "-.":
+                    token = Token(tokenText, TokenType.N)
+                elif keyword == "---":
+                    token = Token(tokenText, TokenType.O)
+                elif keyword == ".--.":
+                    token = Token(tokenText, TokenType.P)
+                elif keyword == "--.-":
+                    token = Token(tokenText, TokenType.Q)
+                elif keyword == ".-.":
+                    token = Token(tokenText, TokenType.R)
+                elif keyword == "...":
+                    token = Token(tokenText, TokenType.S)
+                elif keyword == "-":
+                    token = Token(tokenText, TokenType.T)
+                elif keyword == "..-":
+                    token = Token(tokenText, TokenType.U)
+                elif keyword == "...-":
+                    token = Token(tokenText, TokenType.V)
+                elif keyword == ".--":
+                    token = Token(tokenText, TokenType.W)
+                elif keyword == "-..-":
+                    token = Token(tokenText, TokenType.X)
+                elif keyword == "-.--":
+                    token = Token(tokenText, TokenType.Y)
+                elif keyword == "--..":
+                    token = Token(tokenText, TokenType.Z)
+                #PUNTUACION
+                elif keyword == ".-.-.":
+                    token = Token(tokenText, TokenType.GATO)
+                elif keyword == "..--..":
+                    token = Token(tokenText, TokenType.INTEROGANTE)
+                elif keyword == "-.-.--":
+                    token = Token(tokenText, TokenType.ESCAMACION)
+                elif keyword == "-.--.":
+                    token = Token(tokenText, TokenType.PARENTESISIZQ)
+                elif keyword == "-.--.-":
+                    token = Token(tokenText, TokenType.PARENTESISDER)
+                elif keyword == "---...":
+                    token = Token(tokenText, TokenType.DOSPUNTOS)
                 token = Token(tokenText, TokenType.IDENT)
             else:
                 token = Token(tokenText, keyword)
@@ -131,5 +217,5 @@ class Lexer:
             self.about("Token Desconocido" + self.curChar)
 
         self.nextChar()
-        return token;
+        return token
 
